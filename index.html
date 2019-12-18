@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess Game</title>
+    <title>Fire Emblem Guess Game!</title>
+    <link href="assets/css/reset.css" rel = "stylesheet">
+    <link href="assets/css/style.css" rel = "stylesheet">
 </head>
 
+<!-- intialize the game -->
 <!-- press any key to begin -->
 <!-- pick a random word -->
 <!-- track the player's guess  -->
@@ -19,17 +22,31 @@
 
 <body>
     <section>
-        <h1> Video Game Hangman!</h1>
+        <h1> Fire Emblem <br> Hangman</h1>
 
-        <h3>Press any key to begin!!</h3>
+        <div class= "container">
+        <div id="img"></div>
 
-        <div>Wins:</div>
+        
+        <div>Wins<span id="wins"></span>
+         </div> 
 
-        <div> Number of Guessses Remaining:</div>
+         <div></div>
+            
+         <div>Number of Guessses Remaining: <span id="guess-remaining"></span>
+        </div>
 
-        <div>Letters Already Guessed:</div>
-     
+        <div>Letters Already Guessed:<span id="letters-guessed"></span>
+        </div>
+    
+        <div id="play-area">
+
+        </div>
+
+    </div>
     </section>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
 
