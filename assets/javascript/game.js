@@ -79,7 +79,18 @@ document.onkeyup = function (event) {
             guessesLeft--;
             document.getElementById("guess-remaining").innerHTML = guessesLeft;
         }
+        if (guessesLeft === 0) {
+            loss++;
+            document.getElementById("loss").innerHTML = loss;
+        }
+       
     }
+
+    if (wordLength === 0) {
+        win++;
+        document.getElementById("wins").innerHTML = win;
+    }
+
 }
 
 }
