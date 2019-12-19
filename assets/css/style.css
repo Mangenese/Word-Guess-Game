@@ -3,7 +3,35 @@
 }
 
 img {
-    height: 300px;
+    height: 650px;
     width: auto;
 
+}
+
+h1 {
+    margin-top:10px;
+    position: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Great Vibes', 'cursive';
+}
+
+.container {
+   text-align: center;
+}
+
+body {
+    font-size: 30px;
+    background: url(../images/background.png);
+    z-index: -1000;
+    font-family: 'Great Vibes', 'cursive';
+
+}
+
+#wins {
+    font-weight: bolder;
+}
+
+#loss {
+    font-weight: bolder;
 }
