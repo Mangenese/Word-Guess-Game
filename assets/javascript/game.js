@@ -12,9 +12,6 @@ var words = ["ephraim", "chrom", "corrin", "ike", "lucina", "marth", "robin", "a
 
 // Computer chooses a random word
 
-
-
-
 // function to create a random word
 var getNewWord = function () {
     var randomWord = words[Math.floor(Math.random() * words.length)].toLowerCase();
@@ -98,11 +95,11 @@ var intializeGame = function () {
     }
 
 }
-
+// on key press the function logs what key the user pressed
 document.onkeyup = function (event) {
     var userGuess = event.key;
     console.log(userGuess)
-
+// created a guess funciton to determine  if the guess was correct
     var correctGuess = false;
 
     for (var i = 0; i < randomWord.length; i++) {
@@ -152,6 +149,6 @@ document.onkeyup = function (event) {
     }
 
 }
-
+ // call back to initialize the game after the user wins or loses
 intializeGame();
 
