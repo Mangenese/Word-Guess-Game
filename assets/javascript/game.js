@@ -103,13 +103,13 @@ document.onkeyup = function (event) {
     var userGuess = event.key;
     console.log(userGuess)
 
-    var isGuessWrong = true;
+    var correctGuess = false;
 
     for (var i = 0; i < randomWord.length; i++) {
         if (userGuess === randomWord[i]) {
 
             console.log(wordLength);
-            isGuessWrong = false;
+             correctGuess = true;
             if (blankSpace[i] !== userGuess) {
                 wordLength--;
                 blankSpace[i] = userGuess;
@@ -117,7 +117,7 @@ document.onkeyup = function (event) {
             document.getElementById("play-area").innerHTML = " " + blankSpace.join(",");
         }
     }
-    if (isGuessWrong === true) {
+    if (correctGuess === false) {
         if (guessesLeft > 0) {
             var found = false;
             for (var i = 0; i < letterUsed.length; i++) {
